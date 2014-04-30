@@ -1,0 +1,42 @@
+<!doctype html>
+<html dir="ltr" lang="{{ site.noita.lang }}">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  {% include noita/robots.html %}
+  {% include noita/meta-description.html %}
+
+  {% for stylesheet in site.noita.stylesheets %}
+    <link rel="stylesheet" href="{{ stylesheet }}">
+  {% endfor %}
+
+</head>
+<body>
+
+  <header role="banner" class="top">    
+    
+    <h1><a href="/">Paraiba.js</a></h1>
+    
+    <nav role="navigation">
+      <ul class="right">
+        {% for item in site.noita.menu %}
+          <li{% if item.class %} class="has-form"{% endif %}>
+            <a href="{{ item.url }}" class="{{ item.class }}">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+  </header>
+
+  {{ content }}
+
+  <footer>
+  
+  </footer>
+
+</body>
+</html>

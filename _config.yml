@@ -1,0 +1,26 @@
+markdown: kramdown
+permalink: /blog/:year/:title/
+relative_permalinks: true
+
+layouts: ./_noita
+
+noita:
+  name: Paraiba.js
+  description: Jekyll theme built with Foundation
+  author:
+    name: Anatol Broder
+    url: http://penibelst.de/
+  lang: en
+  stylesheets:  
+  menu:
+    - name: Meet-ups
+      url: /meetups/
+    - name: Talks
+      url: /talks/    
+    - name: Grupo no Facebook
+      url: https://www.facebook.com/groups/paraibajs/
+    - name: Página no Facebook
+      url: https://www.facebook.com/groups/paraibajs/             
+    - name: Github
+      url: https://github.com/paraibajs/paraibajs.github.io
+      class: small button

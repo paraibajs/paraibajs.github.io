@@ -1,0 +1,44 @@
+{% assign first = site.posts.first %}
+{% assign firstcat = first.categories | join %}
+
+{% if firstcat == 'flyer' %}
+
+	{% if first.passed == 0 %}
+
+		<h2>Próximo Meetup</h2>
+
+		{{ first.content }}
+
+		<h3>Talks</h3>
+
+		{% for ordem in (1..10) %}
+
+			{% for post in site.categories.talk limit:3 order:ascending %}
+				
+				{% if post.order == ordem %}
+
+					<div class="post-short">
+					  <h4>{{post.horario}} | {{ post.title }} - {{post.author}}</h4>
+					  <p>{{ post.description }}</p>
+					</div>
+
+				{% endif %}
+				
+			{% endfor %}
+
+		{% endfor %}		
+
+	{% else %}
+
+		<h2>Talks do Meetup Anterior</h2>
+
+		{% for post in site.categories.talk limit:3  %}
+			<div class="post-short">
+			  <h4>{{ post.title }} - {{post.author}} [<a href="{{ post.link }}">Slides</a>]</h4>
+			  <p>{{ post.description }}</p>
+			</div>
+		{% endfor %}
+
+	{% endif %}
+
+{% endif %}
