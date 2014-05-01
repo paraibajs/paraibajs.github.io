@@ -30,9 +30,11 @@ layout: default
 						<div class="right">
 						  <h4>{{ post.title }} - {{post.author}}</h4>
 							
+							{% if post.slides %}
 							<div class="talk-meta">													
 								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
 							</div>
+							{% endif %}
 
 						  {{ post.content }} 						  
 
