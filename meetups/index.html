@@ -1,0 +1,23 @@
+---
+layout: default
+title: Meet-ups
+---
+
+<h2>Meet-ups</h2>
+
+	<div class="meetups-container">
+
+		{% for post in site.categories.flyer order:ascending %}	
+
+		<div class="meetup-item">
+			<h3><a href="{{ post.url }}">{{post.title}}</a></h3>
+			<div class="meetup-meta">
+				<span class="data">{{post.data}}</span>
+				<span class="local">{{post.local}}</span>
+				<span class="horario">{{post.horario}}</span>
+			</div>
+		</div>			
+
+		{% endfor %}
+
+	</div>	

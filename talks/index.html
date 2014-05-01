@@ -1,0 +1,52 @@
+---
+layout: default
+title: Talks
+---
+
+<h2>Talks</h2>
+
+	<div class="talks-container">
+
+		{% for post in site.categories.talk order:ascending %}	
+
+			{% for flyer in site.categories.flyer %}									
+				{% if flyer.slug == post.meetup %}
+					{% assign meetup = flyer %}									
+				{% endif %}
+			{% endfor %}	
+			
+			{% if meetup.passed == 1 %}
+
+				<div class="talk">
+
+					<figure>
+  						<img data-email="{{ post.author_email }}" />
+					</figure>
+
+					<div class="right">
+					  <h4>{{ post.title }} - {{post.author}}</h4>
+					  
+						<div class="talk-meta">							
+
+							<span class="date">{{ meetup.data}}</span>
+							
+							
+							{% if post.slides %}
+								<span class="meetup">{{ meetup.title }}</span>	
+								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
+							{% else %}
+								<span>{{ meetup.title }}</span>	
+							{% endif %}
+
+						</div>
+
+					  {{ post.content }} 						  
+					</div>
+
+				</div>
+
+			{% endif %}		
+
+	{% endfor %}
+
+	</div>	

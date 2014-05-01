@@ -1,26 +1,31 @@
 markdown: kramdown
-permalink: /blog/:year/:title/
+permalink: /meetup/:year/:title/
 relative_permalinks: true
 
-layouts: ./_noita
+layouts: ./_layouts/paraibajs
 
 noita:
   name: Paraiba.js
-  description: Jekyll theme built with Foundation
+  description: Tema feito para o paraiba.js
   author:
-    name: Anatol Broder
-    url: http://penibelst.de/
-  lang: en
+    name: Sérgio Vilar
+    url: http://sergiovilar.com.br/
+  lang: pt
   stylesheets:  
+    - /assets/css/main.css
   menu:
+    - name: Home
+      url: /
     - name: Meet-ups
       url: /meetups/
     - name: Talks
       url: /talks/    
     - name: Grupo no Facebook
       url: https://www.facebook.com/groups/paraibajs/
+      target: _blank
     - name: Página no Facebook
-      url: https://www.facebook.com/groups/paraibajs/             
+      url: https://www.facebook.com/paraibajs/  
+      target: _blank           
     - name: Github
       url: https://github.com/paraibajs/paraibajs.github.io
-      class: small button
+      target: _blank      

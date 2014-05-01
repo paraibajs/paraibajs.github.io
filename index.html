@@ -3,4 +3,108 @@ layout: default
 title: Home
 ---
 
-{% include noita/talks.html %}
+{% for post in site.categories.flyer limit:1 order:ascending %}
+	{% assign first = post %}
+{% endfor %}
+
+{% if first.passed == 0 %}
+
+	<h2>Próximo Meetup</h2>
+
+	<div id="mapa" class="mapa" data-endereco="{{ first.endereco }}"></div>
+
+	<span class="item">Local:</span> {{ first.local }} <br />
+	<span class="item">Horário:</span> {{ first.horario }}
+
+	{{ first.content }}
+
+	<h3>Talks</h3>
+
+	<div class="talks-container">
+
+	{% for ordem in (1..10) %}
+
+		{% for post in site.categories.talk order:ascending %}
+
+			{% if post.meetup == first.slug %}
+
+				{% if post.order == ordem %}
+
+					<div class="talk">
+
+						<figure>
+	  						<img data-email="{{ post.author_email }}" />
+						</figure>
+
+						<div class="right">
+						  <h4>{{post.horario}} | {{ post.title }} - {{post.author}}</h4>
+						  <p>{{ post.content }}</p>
+						</div>
+
+					</div>
+
+				{% endif %}
+			
+			{% endif %}
+			
+		{% endfor %}
+
+	{% endfor %}
+
+	</div>		
+
+{% else %}
+
+	<h2>{{first.title}}</h2>	
+
+	<div id="mapa" class="mapa" data-endereco="{{ first.endereco }}"></div>
+
+	<span class="item">Local:</span> {{ first.local }} <br />
+	<span class="item">Horário:</span> {{ first.horario }}
+
+	<h3>Talks</h3>
+
+	<div class="talks-container">
+
+	{% for ordem in (1..10) %}
+
+		{% for post in site.categories.talk order:ascending %}
+
+			{% if post.meetup == first.slug %}
+			
+				{% if post.order == ordem %}
+
+					<div class="talk">
+
+						<figure>
+	  						<img data-email="{{ post.author_email }}" />
+						</figure>
+
+						<div class="right">
+						  <h4>{{ post.title }} - {{post.author}}</h4>
+							
+							<div class="talk-meta">													
+								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
+							</div>
+
+						  {{ post.content }} 						  
+
+						</div>
+
+					</div>
+
+				{% endif %}
+
+			{% endif %}
+			
+		{% endfor %}
+
+	{% endfor %}
+
+	</div>	
+
+	<h3>Fotos</h3>
+	<div class="photos" data-id="{{first.facebook_album}}"></div>		
+
+{% endif %}
+

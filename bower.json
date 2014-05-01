@@ -1,0 +1,28 @@
+{
+  "name": "paraibajs.github.io",
+  "version": "0.1.0",
+  "homepage": "https://github.com/paraibajs/paraibajs.github.io",
+  "authors": [
+    "Sérgio Vilar <sergiovilar.r@gmail.com>"
+  ],
+  "description": "Site do Paraiba.js",
+  "main": "index.html",
+  "keywords": [
+    "paraibajs"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.1+2",
+    "gmaps": "~0.4.12",
+    "jquery": "~2.1.0"
+  }
+}

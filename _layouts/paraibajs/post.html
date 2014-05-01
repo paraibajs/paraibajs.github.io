@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<h2>{{page.title}}</h2>	
+
+	<div id="mapa" class="mapa" data-endereco="{{ page.endereco }}"></div>
+
+	<span class="item">Local:</span> {{ page.local }} <br />
+	<span class="item">Horário:</span> {{ page.horario }}
+
+	<h3>Talks</h3>
+
+	<div class="talks-container">
+
+	{% for ordem in (1..10) %}
+
+		{% for post in site.categories.talk order:ascending %}
+
+			{% if post.meetup == page.slug %}
+			
+				{% if post.order == ordem %}
+
+					<div class="talk">
+
+						<figure>
+	  						<img data-email="{{ post.author_email }}" />
+						</figure>
+
+						<div class="right">
+						  <h4>{{ post.title }} - {{post.author}}</h4>
+							
+							<div class="talk-meta">													
+								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
+							</div>
+
+						  {{ post.content }} 						  
+
+						</div>
+
+					</div>
+
+				{% endif %}
+
+			{% endif %}
+			
+		{% endfor %}
+
+	{% endfor %}
+
+	</div>	
+
+	<h3>Fotos</h3>
+	<div class="photos" data-id="{{page.facebook_album}}"></div>	
