@@ -10,6 +10,6 @@ local: FPB - Faculdade internacional da Paraíba
 horario: 19h30s ~ 22hs
 data: 30/04/2014
 endereco: Avenida Monsenhor Walfredo Leal 607 Tambiá João Pessoa pB
-facebook_album: 698938543492114
+facebook_album: 731233460262622
 passed: 1
 ---
