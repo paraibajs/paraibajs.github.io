@@ -7,7 +7,7 @@ categories:
 robots: none
 horario: 20h00
 author: Yuri Malheiros
-author_email: email@email.com
+author_email: contato@yurimalheiros.com
 meetup: 2-meetup-pbjs
 slides: https://speakerdeck.com/yurimalheiros/look-mom-no-hands-web-speech-api
 ---
