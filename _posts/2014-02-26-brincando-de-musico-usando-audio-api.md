@@ -7,7 +7,7 @@ categories:
 robots: none
 horario: 19h30
 author: Diógenes Fernandes
-author_email: email@email.com
+author_email: diofeher@gmail.com
 meetup: 2-meetup-pbjs
 slides: https://speakerdeck.com/diofeher/brincando-de-musico-usando-webaudioapi
 ---
