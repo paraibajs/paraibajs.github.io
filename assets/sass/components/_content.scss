@@ -6,6 +6,13 @@ section.content{
 	
 	margin-top:115px;
 	padding-left:20px;	
+	position: relative;
+
+	.send-talk{
+		position: absolute;
+		top:30px;
+		right: 15px;
+	}
 		
 	.mapa{
 		margin-top:30px;

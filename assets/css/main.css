@@ -7902,6 +7902,12 @@ body {
   background: #fcf9f2;
 }
 
+/* line 5, ../sass/components/_general.scss */
+.btn-danger {
+  background: #e54b3f;
+  border: none;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header.top {
   padding-top: 50px;
@@ -7953,76 +7959,83 @@ main.container {
 section.content {
   margin-top: 115px;
   padding-left: 20px;
+  position: relative;
 }
-/* line 10, ../sass/components/_content.scss */
+/* line 11, ../sass/components/_content.scss */
+section.content .send-talk {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+/* line 17, ../sass/components/_content.scss */
 section.content .mapa {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
   height: 200px;
 }
-/* line 17, ../sass/components/_content.scss */
+/* line 24, ../sass/components/_content.scss */
 section.content span.item {
   font-weight: bold;
 }
-/* line 21, ../sass/components/_content.scss */
+/* line 28, ../sass/components/_content.scss */
 section.content .talk {
   margin-top: 20px;
   min-height: 70px;
 }
-/* line 26, ../sass/components/_content.scss */
+/* line 33, ../sass/components/_content.scss */
 section.content .talk .slides {
   background: #e54b3f;
   color: #fff;
   border: none;
 }
-/* line 32, ../sass/components/_content.scss */
+/* line 39, ../sass/components/_content.scss */
 section.content .talk .talk-meta {
   margin-bottom: 10px;
 }
-/* line 36, ../sass/components/_content.scss */
+/* line 43, ../sass/components/_content.scss */
 section.content .talk .talk-meta .date, section.content .talk .talk-meta .meetup {
   display: inline-block;
   border-right: 1px solid #8c8989;
   padding-right: 10px;
   margin-right: 10px;
 }
-/* line 45, ../sass/components/_content.scss */
+/* line 52, ../sass/components/_content.scss */
 section.content .talk figure {
   float: left;
   width: 64px;
   margin-right: 30px;
 }
-/* line 54, ../sass/components/_content.scss */
+/* line 61, ../sass/components/_content.scss */
 section.content .meetup-item h3 a {
   color: #e54b3f;
 }
-/* line 59, ../sass/components/_content.scss */
+/* line 66, ../sass/components/_content.scss */
 section.content .meetup-meta {
   margin-bottom: 10px;
 }
-/* line 63, ../sass/components/_content.scss */
+/* line 70, ../sass/components/_content.scss */
 section.content .meetup-meta .data, section.content .meetup-meta .local {
   display: inline-block;
   border-right: 1px solid #8c8989;
   padding-right: 10px;
   margin-right: 10px;
 }
-/* line 72, ../sass/components/_content.scss */
+/* line 79, ../sass/components/_content.scss */
 section.content .framePhoto {
   width: 100%;
 }
-/* line 78, ../sass/components/_content.scss */
+/* line 85, ../sass/components/_content.scss */
 section.content .photos figure {
   margin-top: 20px;
 }
-/* line 82, ../sass/components/_content.scss */
+/* line 89, ../sass/components/_content.scss */
 section.content .photos img {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  /* line 91, ../sass/components/_content.scss */
+  /* line 98, ../sass/components/_content.scss */
   section.content {
     margin-top: 30px;
   }
