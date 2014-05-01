@@ -7,7 +7,7 @@ categories:
 robots: none
 horario: 21h00
 author: Maurício Linhares
-author_email: email@email.com
+author_email: mauricio.linhares@gmail.com
 meetup: 2-meetup-pbjs
 slides: http://www.slideshare.net/mauricio.linhares/seu-site-voando
 ---
