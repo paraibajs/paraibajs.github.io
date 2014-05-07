@@ -8,7 +8,7 @@ Site do paraiba.js, nos acompanhe também em outros canais:
 * [Grupo no Facebook](https://www.facebook.com/groups/paraibajs/)
 * [Página no Facebook](https://www.facebook.com/paraibajs/)
 
-## Como contribuir
+## Como enviar sua talk
 
 Antes de tudo, se você nunca usou o Github, confira [este artigo](http://php-pb.net/2014/04/28/contribuindo-com-artigos/) do PHP-PB que ensina como contribuir em repositórios com o Jekyll.
 
