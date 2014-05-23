@@ -1,11 +1,11 @@
 ---
 title: "JavaScript from Hell"
 layout: post
-order: 0
+order: 1
 categories:
 - talk
 robots: none
-horario: 00:00
+horario: 19:55
 author: Maurício Linhares
 author_email: mauricio.linhares@gmail.com
 meetup: 4-meetup-pbjs
