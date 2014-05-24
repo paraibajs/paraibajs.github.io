@@ -1,7 +1,7 @@
 ---
 title: "Criando um torrent-browser com Angular.js"
 layout: post
-order: 2
+order: 3
 categories:
 - talk
 robots: none
