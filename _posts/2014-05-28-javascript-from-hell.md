@@ -5,7 +5,7 @@ order: 1
 categories:
 - talk
 robots: none
-horario: 19:55
+horario: 19h55
 author: Maurício Linhares
 author_email: mauricio.linhares@gmail.com
 meetup: 4-meetup-pbjs

@@ -5,7 +5,7 @@ order: 2
 categories:
 - talk
 robots: none
-horario: 20:50
+horario: 20h50
 author: Arthur Gouveia
 author_email: arthur.gouveia@gmail.com
 meetup: 4-meetup-pbjs

@@ -5,7 +5,7 @@ order:
 categories:
 - talk
 robots: none
-horario:
+horario: 21h30
 author: Ivan Quirino
 author_email: ivan@yupistudios.com
 slides: https://github.com/ivanquirino/nodejs-101
