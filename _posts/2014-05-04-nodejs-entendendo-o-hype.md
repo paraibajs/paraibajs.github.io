@@ -8,7 +8,7 @@ robots: none
 horario: 19h30
 author: Ivan Quirino
 author_email: ivan@yupistudios.com
-slides: https://github.com/ivanquirino/nodejs-101
+slides: http://ivanquirino.github.io/nodejs-101/
 meetup: 4-meetup-pbjs
 ---
 
