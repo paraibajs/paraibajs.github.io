@@ -68,6 +68,8 @@ title: Home
 	<span class="item">Data:</span> {{ first.data }}<br />
 	<span class="item">Local:</span> {{ first.local }} <br />
 	<span class="item">Horário:</span> {{ first.horario }}
+	{% if first.livestream != blank %}
+	<span class="item">LiveStream:</span> <a href="{{ first.livestream }}" target="_blank">{{ first.livestream }}</a>
 
 	<h3>Talks</h3>
 
