@@ -7990,52 +7990,58 @@ section.content .talk .slides {
   border: none;
 }
 /* line 39, ../sass/components/_content.scss */
+section.content .talk .demo {
+  background: #2D2D2D;
+  color: #fff;
+  border: none;
+}
+/* line 45, ../sass/components/_content.scss */
 section.content .talk .talk-meta {
   margin-bottom: 10px;
 }
-/* line 43, ../sass/components/_content.scss */
+/* line 49, ../sass/components/_content.scss */
 section.content .talk .talk-meta .date, section.content .talk .talk-meta .meetup {
   display: inline-block;
   border-right: 1px solid #8c8989;
   padding-right: 10px;
   margin-right: 10px;
 }
-/* line 52, ../sass/components/_content.scss */
+/* line 58, ../sass/components/_content.scss */
 section.content .talk figure {
   float: left;
   width: 64px;
   margin-right: 30px;
 }
-/* line 61, ../sass/components/_content.scss */
+/* line 67, ../sass/components/_content.scss */
 section.content .meetup-item h3 a {
   color: #e54b3f;
 }
-/* line 66, ../sass/components/_content.scss */
+/* line 72, ../sass/components/_content.scss */
 section.content .meetup-meta {
   margin-bottom: 10px;
 }
-/* line 70, ../sass/components/_content.scss */
+/* line 76, ../sass/components/_content.scss */
 section.content .meetup-meta .data, section.content .meetup-meta .local {
   display: inline-block;
   border-right: 1px solid #8c8989;
   padding-right: 10px;
   margin-right: 10px;
 }
-/* line 79, ../sass/components/_content.scss */
+/* line 85, ../sass/components/_content.scss */
 section.content .framePhoto {
   width: 100%;
 }
-/* line 85, ../sass/components/_content.scss */
+/* line 91, ../sass/components/_content.scss */
 section.content .photos figure {
   margin-top: 20px;
 }
-/* line 89, ../sass/components/_content.scss */
+/* line 95, ../sass/components/_content.scss */
 section.content .photos img {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  /* line 98, ../sass/components/_content.scss */
+  /* line 104, ../sass/components/_content.scss */
   section.content {
     margin-top: 30px;
   }

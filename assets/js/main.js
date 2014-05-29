@@ -36,6 +36,24 @@ $(document).ready(function(){
 
 	});
 
+	// Monta os vídeos
+	if($('#video').length > 0){
+
+		var videos = $('#video').attr('data-videos').split('/');
+		var html = '';
+		var videoId;
+
+		for(var i in videos){
+
+			videoId = $.trim(videos[i]);
+			html += '<iframe src="http://new.livestream.com/accounts/8645600/events/3043084/videos/'+videoId+'/player?autoPlay=false&height=360&mute=false&width=640" style="width:100%; margin-top:20px" width="640" height="360" frameborder="0" scrolling="no"></iframe>	'			
+
+		}
+
+		$('#videos-container').html(html);
+
+	}
+
 	// Monta o mapa do local
 	
 	var mapaContainer = $('#mapa');

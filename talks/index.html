@@ -30,12 +30,15 @@ title: Talks
 
 							<span class="date">{{ meetup.data}}</span>
 							
-							
-							{% if post.slides %}
-								<span class="meetup">{{ meetup.title }}</span>	
+							<span class="meetup">{{ meetup.title }}</span>	
+
+
+							{% if post.slides %}								
 								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
-							{% else %}
-								<span>{{ meetup.title }}</span>	
+							{% endif %}
+
+							{% if post.demo %}
+								<a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
 							{% endif %}
 
 						</div>

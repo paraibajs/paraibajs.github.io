@@ -67,9 +67,7 @@ title: Home
 	
 	<span class="item">Data:</span> {{ first.data }}<br />
 	<span class="item">Local:</span> {{ first.local }} <br />
-	<span class="item">Horário:</span> {{ first.horario }}
-	{% if first.livestream != blank %}
-	<span class="item">LiveStream:</span> <a href="{{ first.livestream }}" target="_blank">{{ first.livestream }}</a>
+	<span class="item">Horário:</span> {{ first.horario }}	
 
 	<h3>Talks</h3>
 
@@ -98,6 +96,12 @@ title: Home
 							</div>
 							{% endif %}
 
+							{% if post.demo %}
+							<div class="talk-meta">													
+								<a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
+							</div>
+							{% endif %}
+
 						  {{ post.content }} 						  
 
 						</div>
@@ -115,7 +119,14 @@ title: Home
 	</div>	
 
 	<h3>Fotos</h3>
-	<div class="photos" data-id="{{first.facebook_album}}"></div>		
+	<div class="photos" data-id="{{first.facebook_album}}"></div>	
+
+	{% if first.videos != blank %}	
+	<br clear="all" />
+
+	<h3 id="video" data-videos="{{ first.videos }}">Vídeos</h3>
+	<div id="videos-container"></div>
+	{% endif %}
 
 {% endif %}
 

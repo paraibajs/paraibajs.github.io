@@ -36,6 +36,12 @@ layout: default
 							</div>
 							{% endif %}
 
+							{% if post.demo %}
+							<div class="talk-meta">													
+								<a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
+							</div>
+							{% endif %}
+
 						  {{ post.content }} 						  
 
 						</div>
@@ -54,3 +60,10 @@ layout: default
 
 	<h3>Fotos</h3>
 	<div class="photos" data-id="{{page.facebook_album}}"></div>	
+
+	{% if page.videos != nil %}	
+	<br clear="all" />
+
+	<h3 id="video" data-videos="{{ page.videos }}">Vídeos</h3>
+	<div id="videos-container"></div>
+	{% endif %}
