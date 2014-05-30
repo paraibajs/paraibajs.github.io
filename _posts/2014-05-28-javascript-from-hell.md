@@ -8,6 +8,7 @@ robots: none
 horario: 19h55
 author: Maurício Linhares
 author_email: mauricio.linhares@gmail.com
+slides: http://mauricio.github.io/javascript-from-hell
 meetup: 4-meetup-pbjs
 ---
 
