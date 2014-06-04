@@ -2,68 +2,68 @@
 layout: default
 ---
 
-<h2>{{page.title}}</h2>	
+<h2>{{page.title}}</h2>
 
-	<div id="mapa" class="mapa" data-endereco="{{ page.endereco }}"></div>
+    <div id="mapa" class="mapa" data-endereco="{{ page.endereco }}"></div>
 
-	<span class="item">Local:</span> {{ page.local }} <br />
-	<span class="item">Horário:</span> {{ page.horario }}
+    <span class="item">Local:</span> {{ page.local }} <br />
+    <span class="item">Horário:</span> {{ page.horario }}
 
-	<h3>Talks</h3>
+    <h3>Talks</h3>
 
-	<div class="talks-container">
+    <div class="talks-container">
 
-	{% for ordem in (1..10) %}
+    {% for ordem in (1..10) %}
 
-		{% for post in site.categories.talk order:ascending %}
+        {% for post in site.categories.talk order:ascending %}
 
-			{% if post.meetup == page.slug %}
-			
-				{% if post.order == ordem %}
+            {% if post.meetup == page.slug %}
 
-					<div class="talk">
+                {% if post.order == ordem %}
 
-						<figure>
-	  						<img data-email="{{ post.author_email }}" />
-						</figure>
+                    <div class="talk">
 
-						<div class="right">
-						  <h4>{{ post.title }} - {{post.author}}</h4>
-							
-							{% if post.slides %}
-							<div class="talk-meta">													
-								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
-							</div>
-							{% endif %}
+                        <figure>
+                            <img data-email="{{ post.author_email }}" />
+                        </figure>
 
-							{% if post.demo %}
-							<div class="talk-meta">													
-								<a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
-							</div>
-							{% endif %}
+                        <div class="right">
+                          <h4>{{ post.title }} - {{post.author}}</h4>
 
-						  {{ post.content }} 						  
+                            {% if post.slides %}
+                            <div class="talk-meta">
+                                <a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
+                            </div>
+                            {% endif %}
 
-						</div>
+                            {% if post.demo %}
+                            <div class="talk-meta">
+                                <a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
+                            </div>
+                            {% endif %}
 
-					</div>
+                          {{ post.content }}
 
-				{% endif %}
+                        </div>
 
-			{% endif %}
-			
-		{% endfor %}
+                    </div>
 
-	{% endfor %}
+                {% endif %}
 
-	</div>	
+            {% endif %}
 
-	<h3>Fotos</h3>
-	<div class="photos" data-id="{{page.facebook_album}}"></div>	
+        {% endfor %}
 
-	{% if page.videos != nil %}	
-	<br clear="all" />
+    {% endfor %}
 
-	<h3 id="video" data-videos="{{ page.videos }}">Vídeos</h3>
-	<div id="videos-container"></div>
-	{% endif %}
+    </div>
+
+    <h3>Fotos</h3>
+    <div class="photos" data-id="{{page.facebook_album}}"></div>
+
+    {% if page.videos != nil %}
+    <br clear="all" />
+
+    <h3 id="video" data-videos="{{ page.videos }}">Vídeos</h3>
+    <div id="videos-container"></div>
+    {% endif %}

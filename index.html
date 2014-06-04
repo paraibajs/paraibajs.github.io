@@ -4,129 +4,129 @@ title: Home
 ---
 
 <a target="_blank" href="https://github.com/paraibajs/paraibajs.github.io/blob/master/README.md#como-contribuir" class="send-talk btn btn-danger">
-	<span class="glyphicon glyphicon-arrow-up"></span>
-	Submeta sua talk
+    <span class="glyphicon glyphicon-arrow-up"></span>
+    Submeta sua talk
 </a>
 
 {% for post in site.categories.flyer limit:1 order:ascending %}
-	{% assign first = post %}
+    {% assign first = post %}
 {% endfor %}
 
 {% if first.passed == 0 %}
 
-	<h2>Próximo Meetup</h2>
+    <h2>Próximo Meetup</h2>
 
-	<div id="mapa" class="mapa" data-endereco="{{ first.endereco }}"></div>
+    <div id="mapa" class="mapa" data-endereco="{{ first.endereco }}"></div>
 
-	<span class="item">Data:</span> {{ first.data }}<br />
-	<span class="item">Local:</span> {{ first.local }} <br />
-	<span class="item">Horário:</span> {{ first.horario }}
+    <span class="item">Data:</span> {{ first.data }}<br />
+    <span class="item">Local:</span> {{ first.local }} <br />
+    <span class="item">Horário:</span> {{ first.horario }}
 
-	{{ first.content }}
+    {{ first.content }}
 
-	<h3>Talks</h3>
+    <h3>Talks</h3>
 
-	<div class="talks-container">
+    <div class="talks-container">
 
-	{% for ordem in (1..10) %}
+    {% for ordem in (1..10) %}
 
-		{% for post in site.categories.talk order:ascending %}
+        {% for post in site.categories.talk order:ascending %}
 
-			{% if post.meetup == first.slug %}
+            {% if post.meetup == first.slug %}
 
-				{% if post.order == ordem %}
+                {% if post.order == ordem %}
 
-					<div class="talk">
+                    <div class="talk">
 
-						<figure>
-	  						<img data-email="{{ post.author_email }}" />
-						</figure>
+                        <figure>
+                            <img data-email="{{ post.author_email }}" />
+                        </figure>
 
-						<div class="right">
-						  <h4>{{post.horario}} | {{ post.title }} - {{post.author}}</h4>
-						  <p>{{ post.content }}</p>
-						</div>
+                        <div class="right">
+                          <h4>{{post.horario}} | {{ post.title }} - {{post.author}}</h4>
+                          <p>{{ post.content }}</p>
+                        </div>
 
-					</div>
+                    </div>
 
-				{% endif %}
-			
-			{% endif %}
-			
-		{% endfor %}
+                {% endif %}
 
-	{% endfor %}
+            {% endif %}
 
-	</div>		
+        {% endfor %}
+
+    {% endfor %}
+
+    </div>
 
 {% else %}
 
-	<h2>{{first.title}}</h2>	
+    <h2>{{first.title}}</h2>
 
-	<div id="mapa" class="mapa" data-endereco="{{ first.endereco }}"></div>
-	
-	<span class="item">Data:</span> {{ first.data }}<br />
-	<span class="item">Local:</span> {{ first.local }} <br />
-	<span class="item">Horário:</span> {{ first.horario }}	
+    <div id="mapa" class="mapa" data-endereco="{{ first.endereco }}"></div>
 
-	<h3>Talks</h3>
+    <span class="item">Data:</span> {{ first.data }}<br />
+    <span class="item">Local:</span> {{ first.local }} <br />
+    <span class="item">Horário:</span> {{ first.horario }}
 
-	<div class="talks-container">
+    <h3>Talks</h3>
 
-	{% for ordem in (1..10) %}
+    <div class="talks-container">
 
-		{% for post in site.categories.talk order:ascending %}
+    {% for ordem in (1..10) %}
 
-			{% if post.meetup == first.slug %}
-			
-				{% if post.order == ordem %}
+        {% for post in site.categories.talk order:ascending %}
 
-					<div class="talk">
+            {% if post.meetup == first.slug %}
 
-						<figure>
-	  						<img data-email="{{ post.author_email }}" />
-						</figure>
+                {% if post.order == ordem %}
 
-						<div class="right">
-						  <h4>{{ post.title }} - {{post.author}}</h4>
-							
-							{% if post.slides %}
-							<div class="talk-meta">													
-								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
-							</div>
-							{% endif %}
+                    <div class="talk">
 
-							{% if post.demo %}
-							<div class="talk-meta">													
-								<a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
-							</div>
-							{% endif %}
+                        <figure>
+                            <img data-email="{{ post.author_email }}" />
+                        </figure>
 
-						  {{ post.content }} 						  
+                        <div class="right">
+                          <h4>{{ post.title }} - {{post.author}}</h4>
 
-						</div>
+                            {% if post.slides %}
+                            <div class="talk-meta">
+                                <a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
+                            </div>
+                            {% endif %}
 
-					</div>
+                            {% if post.demo %}
+                            <div class="talk-meta">
+                                <a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
+                            </div>
+                            {% endif %}
 
-				{% endif %}
+                          {{ post.content }}
 
-			{% endif %}
-			
-		{% endfor %}
+                        </div>
 
-	{% endfor %}
+                    </div>
 
-	</div>	
+                {% endif %}
 
-	<h3>Fotos</h3>
-	<div class="photos" data-id="{{first.facebook_album}}"></div>	
+            {% endif %}
 
-	{% if first.videos != blank %}	
-	<br clear="all" />
+        {% endfor %}
 
-	<h3 id="video" data-videos="{{ first.videos }}">Vídeos</h3>
-	<div id="videos-container"></div>
-	{% endif %}
+    {% endfor %}
+
+    </div>
+
+    <h3>Fotos</h3>
+    <div class="photos" data-id="{{first.facebook_album}}"></div>
+
+    {% if first.videos != blank %}
+    <br clear="all" />
+
+    <h3 id="video" data-videos="{{ first.videos }}">Vídeos</h3>
+    <div id="videos-container"></div>
+    {% endif %}
 
 {% endif %}
 

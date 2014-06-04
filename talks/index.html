@@ -5,51 +5,51 @@ title: Talks
 
 <h2>Talks</h2>
 
-	<div class="talks-container">
+    <div class="talks-container">
 
-		{% for post in site.categories.talk order:ascending %}	
+        {% for post in site.categories.talk order:ascending %}
 
-			{% for flyer in site.categories.flyer %}									
-				{% if flyer.slug == post.meetup %}
-					{% assign meetup = flyer %}									
-				{% endif %}
-			{% endfor %}	
-			
-			{% if meetup.passed == 1 %}
+            {% for flyer in site.categories.flyer %}
+                {% if flyer.slug == post.meetup %}
+                    {% assign meetup = flyer %}
+                {% endif %}
+            {% endfor %}
 
-				<div class="talk">
+            {% if meetup.passed == 1 %}
 
-					<figure>
-  						<img data-email="{{ post.author_email }}" />
-					</figure>
+                <div class="talk">
 
-					<div class="right">
-					  <h4>{{ post.title }} - {{post.author}}</h4>
-					  
-						<div class="talk-meta">							
+                    <figure>
+                        <img data-email="{{ post.author_email }}" />
+                    </figure>
 
-							<span class="date">{{ meetup.data}}</span>
-							
-							<span class="meetup">{{ meetup.title }}</span>	
+                    <div class="right">
+                      <h4>{{ post.title }} - {{post.author}}</h4>
+
+                        <div class="talk-meta">
+
+                            <span class="date">{{ meetup.data}}</span>
+
+                            <span class="meetup">{{ meetup.title }}</span>
 
 
-							{% if post.slides %}								
-								<a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
-							{% endif %}
+                            {% if post.slides %}
+                                <a class="slides btn btn-default btn-xs" href="{{post.slides}}" target="_blank">Slides</a>
+                            {% endif %}
 
-							{% if post.demo %}
-								<a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
-							{% endif %}
+                            {% if post.demo %}
+                                <a class="demo btn btn-default btn-xs" href="{{post.demo}}" target="_blank">Demo</a>
+                            {% endif %}
 
-						</div>
+                        </div>
 
-					  {{ post.content }} 						  
-					</div>
+                      {{ post.content }}
+                    </div>
 
-				</div>
+                </div>
 
-			{% endif %}		
+            {% endif %}
 
-	{% endfor %}
+        {% endfor %}
 
-	</div>	
+    </div>
