@@ -11,7 +11,7 @@ noita:
     name: Sérgio Vilar
     url: http://sergiovilar.com.br/
   lang: pt
-  stylesheets:  
+  stylesheets:
     - /assets/css/main.css
   menu:
     - name: Home
@@ -19,13 +19,15 @@ noita:
     - name: Meet-ups
       url: /meetups/
     - name: Talks
-      url: /talks/    
+      url: /talks/
+    - name: Parcerias
+      url: /parcerias/
     - name: Grupo no Facebook
       url: https://www.facebook.com/groups/paraibajs/
       target: _blank
     - name: Página no Facebook
-      url: https://www.facebook.com/paraibajs/  
-      target: _blank           
+      url: https://www.facebook.com/paraibajs/
+      target: _blank
     - name: Github
       url: https://github.com/paraibajs/paraibajs.github.io
-      target: _blank      
+      target: _blank

@@ -1,48 +1,48 @@
 header.top{
 
-	padding-top:50px;
+    padding-top:50px;
 
-	h1{
+    h1{
 
-		width:100%;
+        width:100%;
 
-		img{
-			width:100%;
-			height: auto;
-		}
+        img{
+            width:100%;
+            height: auto;
+        }
 
-	}
+    }
 
-	nav{
+    nav{
 
-		font-size:18px;
-		margin-top:30px;
+        font-size:18px;
+        margin-top:30px;
 
-		a{
-			color:#e54b3f;
-		}
-		
-		ul{			
-			list-style:none;
-			margin:0;
-			padding:0;
-		}
+        a{
+            color:#e54b3f;
+        }
 
-		li{
-			display: block;
-			text-align: left;
-			margin-bottom:10px;
-		}
+        ul{
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
 
-	}
+        li{
+            display: block;
+            text-align: left;
+            margin-bottom:10px;
+        }
+
+    }
 
 }
 
-@media (max-width: $screen-xs-max) {	
-	
-	h1{
-		width:225px!important;
-		margin:0 auto;
-	}
+@media (max-width: $screen-xs-max) {
+
+    h1{
+        width:225px!important;
+        margin:0 auto;
+    }
 
 }
