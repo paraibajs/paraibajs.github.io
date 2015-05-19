@@ -11,7 +11,5 @@ horario: 19hs ~ 22hs
 data: 28/05/2014
 endereco: Rua Monsenhor Leal 512 Centro João Pessoa PB
 facebook_album: 746025102116791
-livestream: https://new.livestream.com/accounts/8645600/events/3043084
-videos: 52252383/52260220
 passed: 1
 ---
