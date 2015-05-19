@@ -10,7 +10,7 @@ Site do paraiba.js, nos acompanhe também em outros canais:
 
 ## Como enviar sua talk
 
-Antes de tudo, se você nunca usou o Github, confira [este artigo](http://php-pb.net/2014/04/28/contribuindo-com-artigos/) do PHP-PB que ensina como contribuir em repositórios com o Jekyll.
+Antes de tudo, se você nunca usou o Github, confira [este artigo](http://php-pb.net/2014/04/29/contribuindo-com-artigos/) do PHP-PB que ensina como contribuir em repositórios com o Jekyll.
 
 Para submeter sua palestra, você deve fazer um *fork* do repositório e enviar um Pull Request com a sua talk para a pasta `_posts`. Seu arquivo deve seguir a seguinte nomeclatura:
 
