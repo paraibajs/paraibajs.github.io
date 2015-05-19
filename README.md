@@ -1,7 +1,7 @@
 Paraiba.js
 ==================
 
-##[http://paraibajs.github.io](http://paraibajs.github.io)
+##[http://paraiba.js.org](http://paraiba.js.org)
 
 Site do paraiba.js, nos acompanhe também em outros canais:
 
