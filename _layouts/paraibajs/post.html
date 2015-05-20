@@ -15,7 +15,7 @@ layout: default
 
     {% for ordem in (1..10) %}
 
-        {% for post in site.categories.talk order:ascending %}
+        {% for post in site.talks order:ascending %}
 
             {% if post.meetup == page.slug %}
 
