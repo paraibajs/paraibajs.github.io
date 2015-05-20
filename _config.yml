@@ -1,8 +1,25 @@
 markdown: kramdown
-permalink: /meetup/:year/:title/
+layouts: ./_layouts/paraibajs
 relative_permalinks: true
 
-layouts: ./_layouts/paraibajs
+collections:
+  meetups:
+    output: true
+    permalink: /meetup/:year/:title/
+  talks:
+    output: false
+  editoras_parceiras:
+    output: false
+  grupos_parceiros:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: meetups
+    values:
+      layout: post
+      passed: 0
 
 noita:
   name: Paraiba.js
@@ -30,4 +47,7 @@ noita:
       target: _blank
     - name: Github
       url: https://github.com/paraibajs/paraibajs.github.io
+      target: _blank
+    - name: Contas abertas
+      url: https://docs.google.com/spreadsheets/d/1QxYX_3WYHJnk835vgqX9I0K2vEDRqWf2Co_3S29ZNXk/edit?usp=sharing
       target: _blank

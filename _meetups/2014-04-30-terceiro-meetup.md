@@ -1,9 +1,6 @@
 ---
 title: "3º Meet-up paraiba.js"
 slug: 3-meetup-pbjs
-layout: post
-categories:
-- flyer
 description: "Terceiro Meetup do Paraiba.js"
 author: Sérgio Vilar
 local: FPB - Faculdade Internacional da Paraíba

@@ -7,9 +7,9 @@ title: Talks
 
     <div class="talks-container">
 
-        {% for post in site.categories.talk order:ascending %}
+        {% for post in site.talks reversed %}
 
-            {% for flyer in site.categories.flyer %}
+            {% for flyer in site.meetups %}
                 {% if flyer.slug == post.meetup %}
                     {% assign meetup = flyer %}
                 {% endif %}

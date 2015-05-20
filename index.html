@@ -8,7 +8,7 @@ title: Home
     Submeta sua talk
 </a>
 
-{% for post in site.categories.flyer limit:1 order:ascending %}
+{% for post in site.meetups %}
     {% assign first = post %}
 {% endfor %}
 
@@ -30,7 +30,7 @@ title: Home
 
     {% for ordem in (1..10) %}
 
-        {% for post in site.categories.talk order:ascending %}
+        {% for post in site.talks order:ascending %}
 
             {% if post.meetup == first.slug %}
 

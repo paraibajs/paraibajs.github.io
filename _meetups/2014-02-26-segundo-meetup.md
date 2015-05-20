@@ -1,9 +1,6 @@
 ---
 title: "2º Meet-up paraiba.js"
 slug: 2-meetup-pbjs
-layout: post
-categories:
-- flyer
 description: "Segundo Meetup do Paraiba.js"
 author: Sérgio Vilar
 local: Auditório do IFPB

@@ -1,9 +1,6 @@
 ---
 title: "1º Meet-up paraiba.js"
 slug: 1-meetup-pbjs
-layout: post
-categories:
-- flyer
 description: "Terceiro Meetup do Paraiba.js"
 author: Sérgio Vilar
 local: Tot Coworking

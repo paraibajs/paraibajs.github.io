@@ -7,7 +7,7 @@ title: Meet-ups
 
 	<div class="meetups-container">
 
-		{% for post in site.categories.flyer order:ascending %}	
+		{% for post in site.meetups %}	
 
 		<div class="meetup-item">
 			<h3><a href="{{ post.url }}">{{post.title}}</a></h3>
