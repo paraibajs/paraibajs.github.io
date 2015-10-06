@@ -1,7 +1,7 @@
 ---
 title: "SUIT CSS como padrão de escrita de estilos"
 layout: post
-order: 1
+order: 4
 categories:
 - talk
 robots: none
