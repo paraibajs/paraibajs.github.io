@@ -1,4 +1,4 @@
-/* 
+/*
 * @Author: sergiovilar
 * @Date:   2014-05-01 10:39:13
 * @Last Modified by:   sergiovilar
@@ -6,9 +6,9 @@
 */
 
 $(document).ready(function(){
-   	
+
 	// Pega as fotos dos speakers
-	
+
 	$('.talk').each(function(i, item){
 
 		var img = $(item).find('img');
@@ -18,11 +18,12 @@ $(document).ready(function(){
 
 	});
 
+  var token = 'CAADUNXnl3KIBAPDatfoCMhcZBHNWx1rgPvFrhbZB818JNLYHLjLYwvtzQFq5P6Lh6c3niNRvCZAOEu1bF8372A5oRvxMUHjUyhy2jAhHv8YgO0CWnwuOU7W8eqjwjL7cUzcHJvDwZA6YQwpRt26w2jO13fL0DidZCrBdxEwTnxRJtWsrlXaOYbJUTZAf75PzQEpu8OuMZAIQQZDZD';
+
 	$('.photos').each(function(i, item){
 
 		var id = $(item).attr('data-id');
-
-		$.get('https://graph.facebook.com/'+id+'/photos', function(data){
+		$.getJSON('https://graph.facebook.com/'+id+'/photos?access_token='+token, function(data){
 
 			var html = '';
 
@@ -46,7 +47,7 @@ $(document).ready(function(){
 		for(var i in videos){
 
 			videoId = $.trim(videos[i]);
-			html += '<iframe src="http://new.livestream.com/accounts/8645600/events/3043084/videos/'+videoId+'/player?autoPlay=false&height=360&mute=false&width=640" style="width:100%; margin-top:20px" width="640" height="360" frameborder="0" scrolling="no"></iframe>	'			
+			html += '<iframe src="http://new.livestream.com/accounts/8645600/events/3043084/videos/'+videoId+'/player?autoPlay=false&height=360&mute=false&width=640" style="width:100%; margin-top:20px" width="640" height="360" frameborder="0" scrolling="no"></iframe>	'
 
 		}
 
@@ -55,7 +56,7 @@ $(document).ready(function(){
 	}
 
 	// Monta o mapa do local
-	
+
 	var mapaContainer = $('#mapa');
 
 	if(mapaContainer.length > 0){
@@ -80,6 +81,6 @@ $(document).ready(function(){
 		  }
 		});
 
-	}	
+	}
 
 });
