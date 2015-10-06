@@ -5,7 +5,7 @@ relative_permalinks: true
 collections:
   meetups:
     output: true
-    permalink: /meetup/:year/:title/
+    permalink: /meetup/:title/
   talks:
     output: false
   editoras_parceiras:
