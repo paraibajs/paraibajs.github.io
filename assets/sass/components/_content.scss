@@ -89,11 +89,16 @@ section.content{
     .photos{
 
         figure{
-            margin-top:20px;
+            margin-top: 20px;
+            overflow: hidden;
+            height: 150px;
         }
 
         img{
-            width:100%;
+            width: auto;
+            height: 100%;
+            margin: 0 auto;
+            display: block;
         }
     }
 
