@@ -37,10 +37,17 @@ noita:
       url: /meetups/
     - name: Talks
       url: /talks/
+    - name: Weekly
+      url: http://paraiba.us12.list-manage1.com/subscribe?u=4fa5d5b018759748864e9b64c&id=3d516d0538
     - name: Parcerias
       url: /parcerias/
+    - name: Grupo no meetup.com
+      url: http://www.meetup.com/pt/paraibajs/
     - name: Grupo no Facebook
       url: https://www.facebook.com/groups/paraibajs/
+      target: _blank
+    - name: Twitter
+      url: http://twitter.com/paraibajs
       target: _blank
     - name: Página no Facebook
       url: https://www.facebook.com/paraibajs/
