@@ -8,6 +8,6 @@ robots: none
 horario: 15h00
 author: Joel Wallis Jucá
 author_email: joelwallis@gmail.com
-#slides: https://speakerdeck.com/jpaulobneto/suit-css-como-padrao-de-escrita-de-estilos
+slides: https://speakerdeck.com/joelwallis/introducao-ao-angularjs
 meetup: 5-meetup-pbjs
 ---
