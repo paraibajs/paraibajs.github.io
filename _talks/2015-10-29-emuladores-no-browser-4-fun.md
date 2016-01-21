@@ -8,6 +8,6 @@ robots: none
 horario: 16h00
 author: Thiago Pontes
 author_email: email@thiago.me
-#slides: https://speakerdeck.com/jpaulobneto/suit-css-como-padrao-de-escrita-de-estilos
+slides: https://speakerdeck.com/thiagopnts/emuladores-4-fun-and-profit
 meetup: 5-meetup-pbjs
 ---

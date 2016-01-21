@@ -7,6 +7,6 @@ local: Empório Café
 horario: 15hs ~ 18hs
 data: 07/11/2015
 endereco: Rua Coração de Jesus, 145, Tambaú, João Pessoa - PB, 58039-070
-#facebook_album: 746025102116791
-passed: 0
+facebook_album: 1038699942849304
+passed: 1
 ---
