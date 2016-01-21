@@ -25,7 +25,7 @@ Visite já o [site do evento](https://br.darkmiratour.com) e [compre seu ingress
 
 ### Sobre a parceria
 
-A princípio teremos um cupom de desconto de 25% no ingresso de dois dias de palestras para o Darkmira Tour, mas só apenas até o dia 12 de Fevereiro. Depois teremos outro desconto mais singelo, mas ainda sim muito bom.
+A princípio teremos um cupom de desconto de 25% no ingresso de dois dias de palestras para o Darkmira Tour, mas só apenas até o dia 12 de Fevereiro. Depois teremos outro desconto mais singelo, mas ainda sim muito bom. Pra conseguir o cupom de desconto é só mandar uma mensagem na nossa [página do Facebook](https://www.facebook.com/paraibajs/).
 
 Os organizers do paraiba.js estarão em Brasília e, além do desconto, teremos também um espaço durante o evento para receber os membros da comunidade.
 
