@@ -1,11 +1,16 @@
 markdown: kramdown
 layouts: ./_layouts/paraibajs
 relative_permalinks: true
+date_format: "%b %-d, %Y"
+url: http://paraiba.js.org/
 
 collections:
   meetups:
     output: true
     permalink: /meetup/:title/
+  posts:
+    output: true
+    permalink: /p/:title/
   talks:
     output: false
   editoras_parceiras:
@@ -33,6 +38,8 @@ noita:
   menu:
     - name: Home
       url: /
+    - name: Blog
+      url: /blog
     - name: Meet-ups
       url: /meetups/
     - name: Talks
