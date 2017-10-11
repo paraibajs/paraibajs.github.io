@@ -1,7 +1,4 @@
-Paraiba.js
-==================
-
-##[http://paraiba.js.org](http://paraiba.js.org)
+# [Paraiba.js](http://paraiba.js.org) [![Build Status](https://travis-ci.org/paraibajs/paraibajs.github.io.svg?branch=master)](https://travis-ci.org/paraibajs/paraibajs.github.io)
 
 Site do paraiba.js, nos acompanhe também em outros canais:
 
@@ -15,7 +12,7 @@ Antes de tudo, se você nunca usou o Github, confira [este artigo](http://php-pb
 Para submeter sua palestra, você deve fazer um *fork* do repositório e enviar um Pull Request com a sua talk para a pasta `_posts`. Seu arquivo deve seguir a seguinte nomeclatura:
 
     2014-04-29-aplicacoes-desktop-com-nodewebkit.md
-    
+
 Fora isso, o seu arquivo deve possuir o seguinte cabeçalho    
 
     ---
@@ -31,7 +28,7 @@ Fora isso, o seu arquivo deve possuir o seguinte cabeçalho
     slides: http://sergiovilar.com.br/talks/paraibajs-abr
     meetup: 3-meetup-pbjs
     ---
-    
+
     A talk é um live-coding mostrando como construir o Photo Booth do Mac OS X usando apenas HTML, CSS e Javascript.
-    
+
 Onde o campo **meetup** equivale ao evento que você deseja submeter. O resto do arquivo é auto-explicativo.
